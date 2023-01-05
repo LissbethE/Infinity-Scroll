@@ -76,9 +76,6 @@ const getPhotos = function () {
 };
 
 // Check to see if scrolling near bottom of page, Load more photos
-
-/*  we're actually going to add the event listener to our window. So the window is 
-the parent of the document and the grandparent of our body. */
 window.addEventListener('scroll', () => {
   if (
     window.innerHeight + window.scrollY >= document.body.offsetHeight - 1000 &&
